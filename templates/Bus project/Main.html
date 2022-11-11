@@ -1,0 +1,71 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+
+
+{% include 'Bus project//head.html' %}
+
+ <!-- DEFAULT CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %} ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
+
+
+<body>
+  <div class="container-fluid" style="justify-content: space-between">
+      <a><img src="https://i.ibb.co/VgymkTx/logo.png" alt="logo" border="0" style="width: 250px;"></a>
+  </div>
+  <div style="text-align: center;">
+      <h1><p>어디로 떠날까요?</p></h1>
+{#      검색창#}
+      <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input class="search-bar__input" type="search" placeholder="검색" />
+        </div>
+
+  </div>
+{#  텍스트#}
+  <div>
+
+  </div>
+
+  <div  style=" padding-right: 83px; center; display: flex; justify-content: space-between; padding-left: 83px;">
+      <div ><h1><r class="regular">추천하는 장소</r></h1></div>
+      <div><button class="w-btn w-btn-green2" type="button">필터</button></div>
+  </div>
+{#  #}
+  <div class="container-fluid" style="display: inline-flex; justify-content: space-evenly; flex-wrap: wrap;">
+      <div style="position: relative; width: 550px; height: 550px; padding: 1px 1px 2px 3px;  ">
+          <div class="star"><span class="material-symbols-outlined" style="font-size: 50px;">star</span></div>
+          <div> <img src="https://post-phinf.pstatic.net/MjAxOTExMDRfNDYg/MDAxNTcyODQ3OTAzNjMx.JA4Rezq3Vab4NteKLPm8qP-wIjJnSLK6QRJOg14QLRUg.BjlGsZFgWM58iGhRIY7_fmvJgI60nxnIeQoFfhIycCog.JPEG/KakaoTalk_20191104_150915996.jpg?type=w1200" width="530px" height = "515px" class="rec_pic"> </div>
+          <div class="green_box"></div>
+          <div class = "text_box"><k>안녕 인사동</k></div>
+      </div>
+      <div style="position: relative; width: 550px; height: 550px; padding: 1px 1px 2px 3px;  ">
+          <div class="star"><span class="material-symbols-outlined" style="font-size: 50px;">star</span></div>
+          <div> <img src="https://post-phinf.pstatic.net/MjAxOTExMDRfNDYg/MDAxNTcyODQ3OTAzNjMx.JA4Rezq3Vab4NteKLPm8qP-wIjJnSLK6QRJOg14QLRUg.BjlGsZFgWM58iGhRIY7_fmvJgI60nxnIeQoFfhIycCog.JPEG/KakaoTalk_20191104_150915996.jpg?type=w1200" width="530px" height = "515px" class="rec_pic"> </div>
+          <div class="green_box"></div>
+          <div class = "text_box"><k>안녕 인사동</k></div>
+      </div>
+      <div style="position: relative; width: 550px; height: 550px; padding: 1px 1px 2px 3px;  ">
+          <div class="star"><span class="material-symbols-outlined" style="font-size: 50px;">star</span></div>
+          <div> <img src="https://post-phinf.pstatic.net/MjAxOTExMDRfNDYg/MDAxNTcyODQ3OTAzNjMx.JA4Rezq3Vab4NteKLPm8qP-wIjJnSLK6QRJOg14QLRUg.BjlGsZFgWM58iGhRIY7_fmvJgI60nxnIeQoFfhIycCog.JPEG/KakaoTalk_20191104_150915996.jpg?type=w1200" width="530px" height = "515px" class="rec_pic"> </div>
+          <div class="green_box"></div>
+          <div class = "text_box"><k>안녕 인사동</k></div>
+      </div>
+  </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,47 @@
+/*textarea{*/
+/*     width:100%;*/
+/*}*/
+
+/*input[type=submit]{*/
+/*     margin-top:10px;*/
+/*}*/
+
+p {
+ font-family: 'Cute Font', cursive;
+}
+
+r {
+  font-family: 'Nanum Brush Script', cursive;
+}
+
+.star {
+    position:absolute;
+    right:10px;
+}
+
+.green_box {
+    position:absolute;
+    left : 10px;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+}
+.text_box {
+    position:absolute;
+    left : 50px;
+    font-size : 20px;
+}
+.rec_pic {
+    border-radius: 20%;
+}
+k {
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.container {
+	flex-direction: row;
+	/* flex-direction: column; */
+	/* flex-direction: row-reverse; */
+	/* flex-direction: column-reverse; */
+}
