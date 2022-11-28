@@ -3,7 +3,7 @@
 <html lang="ko">
 
 
-{% include 'Bus project//head.html' %}
+{% include 'Bus project/head.html' %}
 
  <!-- DEFAULT CSS LINK -->
     <link rel="stylesheet" type="text/css" href="{% static 'base.css' %} ">
@@ -18,10 +18,10 @@
   <div style="text-align: center;">
       <p style="font-size: 50px;">어디로 떠날까요?</p>
 {#      검색창#}
-      <div class="search-bar">
+      <div class="search-bar" style="border: 20px;">
           <i class="fas fa-search"></i>
-          <input class="search-bar__input" type="search" placeholder="검색" />
-        </div>
+          <input class="search-bar__input" type="search" style="width: 30%; height: 40px; border-radius: 20px; padding-inline-start: 20px;" placeholder="검색">
+      </div>
 
   </div>
 {#  텍스트#}
@@ -29,7 +29,7 @@
 
   </div>
 
-  <div  style=" padding-right: 83px; center; display: flex; justify-content: space-between; padding-left: 83px;">
+  <div  style=" padding-right: 83px; display: flex; justify-content: space-between; padding-left: 83px;">
       <div ><h1><p class="regular" style="font-size : 30px;">추천하는 장소</p></h1></div>
       <div><button class="w-btn w-btn-green2" type="button">필터</button></div>
   </div>
