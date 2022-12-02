@@ -35,24 +35,49 @@
   </div>
 {#  #}
   <div class="container-fluid" style="display: inline-flex; justify-content: space-evenly; flex-wrap: wrap;">
+      {% for feed in feeds %}
       <div style="position: relative; width: 550px; height: 550px; padding: 1px 1px 2px 3px;  ">
           <div class="star"><span class="material-symbols-outlined" style="font-size: 50px;">star</span></div>
-          <div> <img src="https://post-phinf.pstatic.net/MjAxOTExMDRfNDYg/MDAxNTcyODQ3OTAzNjMx.JA4Rezq3Vab4NteKLPm8qP-wIjJnSLK6QRJOg14QLRUg.BjlGsZFgWM58iGhRIY7_fmvJgI60nxnIeQoFfhIycCog.JPEG/KakaoTalk_20191104_150915996.jpg?type=w1200" width="530px" height = "515px" class="rec_pic"> </div>
+          <div class="place"> <img src="{{ feed.image }}" width="530px" height = "515px" class="rec_pic"> </div>
+
+          {% if feed.conv == 'g' %}
           <div class="green_box"></div>
-          <div class = "text_box"><k>안녕 인사동</k></div>
+          {% elif feed.conv == 'y' %}
+          <div class="yellow_box"></div>
+          {% else %}
+          <div class="red_box"></div>
+          {% endif %}
+
+          <div class = "text_box"><k>{{ feed.name }}</k></div>
       </div>
-      <div style="position: relative; width: 550px; height: 550px; padding: 1px 1px 2px 3px;  ">
-          <div class="star"><span class="material-symbols-outlined" style="font-size: 50px;">star</span></div>
-          <div> <img src="https://post-phinf.pstatic.net/MjAxOTExMDRfNDYg/MDAxNTcyODQ3OTAzNjMx.JA4Rezq3Vab4NteKLPm8qP-wIjJnSLK6QRJOg14QLRUg.BjlGsZFgWM58iGhRIY7_fmvJgI60nxnIeQoFfhIycCog.JPEG/KakaoTalk_20191104_150915996.jpg?type=w1200" width="530px" height = "515px" class="rec_pic"> </div>
-          <div class="green_box"></div>
-          <div class = "text_box"><k>안녕 인사동</k></div>
-      </div>
-      <div style="position: relative; width: 550px; height: 550px; padding: 1px 1px 2px 3px;  ">
-          <div class="star"><span class="material-symbols-outlined" style="font-size: 50px;">star</span></div>
-          <div> <img src="https://post-phinf.pstatic.net/MjAxOTExMDRfNDYg/MDAxNTcyODQ3OTAzNjMx.JA4Rezq3Vab4NteKLPm8qP-wIjJnSLK6QRJOg14QLRUg.BjlGsZFgWM58iGhRIY7_fmvJgI60nxnIeQoFfhIycCog.JPEG/KakaoTalk_20191104_150915996.jpg?type=w1200" width="530px" height = "515px" class="rec_pic"> </div>
-          <div class="green_box"></div>
-          <div class = "text_box"><k>안녕 인사동</k></div>
-      </div>
+      {% endfor %}
+
+
+  <script>
+        //검색어 누르고 엔터키
+        $(document).ready(function() {
+
+            $(".search-bar__input").keydown(function (key) {
+                if (key.keyCode == 13) {
+
+
+                    location.href='{% url 'api' %}'
+
+
+                }
+            });
+        });
+
+
+        $('.place').on('click', ()=>{
+
+            location.href='{% url 'api' %}'
+
+        });
+
+
+    </script>
+
   </div>
 
 

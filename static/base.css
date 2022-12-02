@@ -27,6 +27,24 @@ r {
     background-color: green;
     border-radius: 50%;
 }
+
+.yellow_box {
+    position:absolute;
+    left : 10px;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.red_box {
+    position:absolute;
+    left : 10px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+}
 .text_box {
     position:absolute;
     left : 50px;

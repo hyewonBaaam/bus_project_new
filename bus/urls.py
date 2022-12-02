@@ -20,7 +20,7 @@ from .views import Sub, Sub1, Sub2
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('', Sub.as_view()),
-    path('samchung/', Sub1.as_view()),
+    path('samchung/', Sub1.as_view(), name='api'),
     path('example/', Sub2.as_view())
 
 ]
