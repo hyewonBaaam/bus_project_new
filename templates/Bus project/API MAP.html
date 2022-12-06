@@ -66,20 +66,24 @@
 
 <h1>저상버스로 가는 길찾기</h1>
 {#API넣어둘 창은 왼쪽 / 댓글창은 오른쪽#}
-  <div style="display: flex; flex-direction: row; text-align: center;">
-    <div class = "flex-container" style="width: 300px; height: 600px;">
-    <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="출발지" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">submit</button>
-    </form>
-    <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder={{ query }} aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">submit</button>
-    </form>
+
+{% for feed in feeds1 %}
+    <div style="display: flex; flex-direction: row; text-align: center;">
+
+        <div class="flex-container" style="width: 300px; height: 600px;">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="출발지" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">submit</button>
+            </form>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder= "{{ feed.address }}" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">submit</button>
+            </form>
+        </div>
+        <div style="width: 1200px; height: 600px; background: gold">API넣기</div>
+        <div style="width: 430px; height: 600px; border: solid 1px black;">댓글창 만들기 + 로고 넣기</div>
     </div>
-    <div style="width: 1200px; height: 600px; background: gold">API넣기</div>
-    <div style="width: 430px; height: 600px; border: solid 1px black;">댓글창 만들기 + 로고 넣기</div>
-  </div>
+{% endfor %}
 
     <!-- Optional JavaScript; choose one of the two! -->
 

@@ -8,3 +8,4 @@ class Feed(models.Model):
     explain = models.TextField()
     conv = models.TextField()
     detail = models.TextField(default='aa')
+    address = models.TextField(default='aa')
