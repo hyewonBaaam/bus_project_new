@@ -24,7 +24,7 @@ r {
     left : 10px;
     width: 30px;
     height: 30px;
-    background-color: green;
+    background-color: forestgreen;
     border-radius: 50%;
 }
 
@@ -33,7 +33,7 @@ r {
     left : 10px;
     width: 30px;
     height: 30px;
-    background-color: yellow;
+    background-color: goldenrod;
     border-radius: 50%;
 }
 
@@ -42,7 +42,7 @@ r {
     left : 10px;
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: darkred;
     border-radius: 50%;
 }
 .text_box {

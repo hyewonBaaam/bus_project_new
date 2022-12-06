@@ -7,3 +7,4 @@ class Feed(models.Model):
     location = models.TextField()
     explain = models.TextField()
     conv = models.TextField()
+    detail = models.TextField(default='aa')
